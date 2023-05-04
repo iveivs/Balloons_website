@@ -2,7 +2,7 @@ body
     font-family: 'Roboto', sans-serif
     font-weight: 400
     color: $color-grey
-    font-size: 1.6rem
+    font-size: $font-size-paragraph
     letter-spacing: .2rem
 
 .title-first
@@ -29,4 +29,29 @@ body
         animation-duration: 3s
         animation-delay: 0.5s
         animation-timing-function: ease
-        margin-bottom: 6.5rem    
+        margin-bottom: 6.5rem
+.title-secondary
+    text-align: center
+    display: inline-block
+    font-size: $font-size-paragraph-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800    
+    background: linear-gradient(90deg, rgba($color-brown-dark, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all 1s
+    backface-visibility: hidden
+    &:hover
+        transform: skewY(4deg) skewX(12deg) scale(1.01)
+        text-shadow: 0rem .4rem .4rem rgba($color-black, .25)
+
+.title-third
+    font-size: $font-size-paragraph-h3
+    letter-spacing: .2rem
+    text-transform: uppercase
+    font-weight: 700
+.paragraph
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+    font-weight: 400
