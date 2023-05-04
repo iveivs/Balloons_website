@@ -3,3 +3,10 @@
     text-decoration: none
     color: $color-grey
     display: inline-block
+
+@mixin clearfix
+    &::after
+        content: ''
+        display: table
+        clear: both
+    

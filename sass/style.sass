@@ -2,6 +2,9 @@
 @import "./abstracts/mixins"
 @import "./base/animation"
 @import "./components/button"
+@import './layout/grid'
+@import './pages/home'
+@import './base/typography'
 
 
 
@@ -15,17 +18,11 @@ html
     font-size: 62.5%
 
 body
-    font-family: 'Roboto', sans-serif
-    font-weight: 400
-    color: $color-grey
-    font-size: 1.6rem
-    letter-spacing: .2rem
     padding: 5rem
     background-color: $color-white
-
 .container
     background-color: #F7F7F7
-    height: 500px
+    // height: 500px
     width: 100%
 
 .header
@@ -46,31 +43,6 @@ body
         left: 50%
         transform: translate(-50%, -50%)
         text-align: center
-.title-first
-    color: $color-white
-    
-    &__main
-        display: block
-        font-weight: 700
-        font-size: 5.6rem
-        line-height: 6rem
-        letter-spacing: 1.6rem
-        text-transform: uppercase
-        margin-bottom: 1rem
-        animation-name: leftToRight
-        animation-duration: 3s
-        animation-delay: 0.5s
-        animation-timing-function: ease
-    &__second
-        display: block
-        font-size: 4rem
-        font-weight: 300
-        letter-spacing: .5rem
-        animation-name: RightToleft
-        animation-duration: 3s
-        animation-delay: 0.5s
-        animation-timing-function: ease
-        margin-bottom: 6.5rem
 
 
 
