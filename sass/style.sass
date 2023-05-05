@@ -7,6 +7,9 @@
 @import './base/typography'
 @import './base/utilities'
 @import './components/button-text'
+@import './components/composition'
+@import './layout/_header'
+@import './components/adventure-card'
 
 
 
@@ -27,24 +30,7 @@ body
     // height: 500px
     width: 100%
 
-.header
-    position: relative
-    height: 95vh
-    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpeg) center center / cover no-repeat
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
-    &__logo
-        position: absolute
-        left: 5rem
-        top: 5rem
-        height: 7rem
-        width: 5.6rem
-    &__box
-        width: 100%
-        position: absolute
-        top: 40%
-        left: 50%
-        transform: translate(-50%, -50%)
-        text-align: center
+
 
 
 

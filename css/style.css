@@ -122,6 +122,16 @@
 
 .section-about {
   padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.section-adventure {
+  padding: 21rem 0;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/sec_adv.jpg) center center/cover no-repeat;
+  transform: skewY(7deg);
+}
+.section-adventure > * {
+  transform: skewY(-7deg);
 }
 
 body {
@@ -233,24 +243,37 @@ body {
   transform: translateY(0rem);
 }
 
-*, ::after, ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.composition {
+  position: relative;
 }
-
-html {
-  font-size: 62.5%;
+.composition__photo {
+  width: 55%;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 2rem;
 }
-
-body {
-  padding: 5rem;
-  background-color: #FFFFFF;
+.composition__photo_n1 {
+  top: 0rem;
+  left: 0rem;
 }
-
-.container {
-  background-color: #F7F7F7;
-  width: 100%;
+.composition__photo_n2 {
+  top: 3.5rem;
+  right: 0.5rem;
+}
+.composition__photo_n3 {
+  top: 13rem;
+  left: 10rem;
+}
+.composition__photo:hover {
+  outline: 0.8rem solid #ba8554;
+  transform: scale(1.1);
+  z-index: 20;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
 }
 
 .header {
@@ -274,4 +297,44 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.adventure-card {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: 0.2s all;
+}
+.adventure-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.adventure-card__icon {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(161, 79, 3, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 5rem;
+  background-color: #FFFFFF;
+}
+
+.container {
+  background-color: #F7F7F7;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
