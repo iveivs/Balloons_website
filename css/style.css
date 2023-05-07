@@ -134,6 +134,10 @@
   transform: skewY(-7deg);
 }
 
+.section-tour {
+  padding-top: 21rem;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -308,7 +312,7 @@ body {
   transition: 0.2s all;
 }
 .adventure-card:hover {
-  transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.1rem) scale(1.02);
 }
 .adventure-card__icon {
   font-size: 6rem;
@@ -317,6 +321,37 @@ body {
   color: transparent;
   display: inline-block;
   margin-bottom: 15px;
+}
+
+.card-tour {
+  height: 50rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+}
+.card-tour__side {
+  transition: 1s all ease-out;
+  height: 50rem;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card-tour__side_front {
+  background: yellow;
+}
+.card-tour__side_back {
+  background: green;
+  transform: rotateY(180deg);
+  background: linear-gradient(120deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+}
+.card-tour:hover .card-tour__side_front {
+  transform: rotateY(180deg);
+}
+.card-tour:hover .card-tour__side_back {
+  transform: rotateY(0deg);
 }
 
 *, ::after, ::before {
