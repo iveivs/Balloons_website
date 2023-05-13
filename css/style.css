@@ -62,9 +62,8 @@
 }
 
 .section-feedBack {
-  padding-top: 8rem;
+  padding: 8rem 0rem;
   position: relative;
-  width: 100%;
 }
 
 @keyframes BtnToUp {
@@ -121,8 +120,7 @@ body {
 .container {
   background-color: #F7F7F7;
   position: relative;
-  width: 100%;
-  z-index: -2;
+  z-index: 0;
 }
 
 body {
@@ -516,7 +514,18 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  height: 100%;
+  z-index: -2;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
